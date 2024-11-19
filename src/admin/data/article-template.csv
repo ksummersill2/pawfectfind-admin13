@@ -1,0 +1,5 @@
+breed_name,title,url,description,category,source,published_date,is_featured,tags
+German Shepherd,Training Your German Shepherd Puppy: Essential Tips,https://example.com/gsd-training,Comprehensive guide for training German Shepherd puppies from 8 weeks to 6 months,training,AKC,2024-03-15,true,puppy training;basic obedience;socialization
+German Shepherd,Common Health Issues in German Shepherds,https://example.com/gsd-health,Learn about common health problems in German Shepherds and how to prevent them,health,VetStreet,2024-03-10,false,health care;preventive care;genetic conditions
+Golden Retriever,Golden Retriever Grooming Guide,https://example.com/golden-grooming,Complete guide to grooming your Golden Retriever including brushing techniques and bathing tips,grooming,PetMD,2024-03-12,true,grooming;coat care;shedding
+Chihuahua,Nutrition Guide for Chihuahuas,https://example.com/chihuahua-nutrition,Essential nutrition information for maintaining a healthy Chihuahua diet,nutrition,DogTime,2024-03-08,false,diet;feeding schedule;small breed nutrition
