@@ -4,6 +4,8 @@ import ErrorBoundary from '../../components/ErrorBoundary';
 import LoadingSpinner from '../../components/common/LoadingSpinner';
 
 const PrintfulIntegration: React.FC = () => {
+  console.log('Rendering PrintfulIntegration component...');
+
   return (
     <div className="space-y-6">
       <div className="flex justify-between items-center">
@@ -14,8 +16,18 @@ const PrintfulIntegration: React.FC = () => {
 
       <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm overflow-hidden p-6">
         <ErrorBoundary>
-          <Suspense fallback={<LoadingSpinner />}>
-            <PrintfulApp className="w-full min-h-[800px]" />
+          <Suspense
+            fallback={
+              <>
+                {console.log('Loading fallback triggered: LoadingSpinner')}
+                <LoadingSpinner />
+              </>
+            }
+          >
+            {(() => {
+              console.log('Loading PrintfulApp component...');
+              return <PrintfulApp className="w-full min-h-[800px]" />;
+            })()}
           </Suspense>
         </ErrorBoundary>
       </div>

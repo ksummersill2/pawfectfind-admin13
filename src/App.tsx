@@ -14,6 +14,7 @@ import AdminVideos from './admin/pages/AdminVideos';
 import BreedEdit from './admin/pages/BreedEdit';
 import ProductImport from './admin/pages/ProductImport';
 import CJImport from './admin/pages/CJImport';
+import PrintfulIntegration from './admin/pages/PrintfulIntegration'; // Add this import
 import LoadingScreen from './components/common/LoadingScreen';
 import { LoginPage } from './auth';
 import { initializeStorage } from './lib/supabase/storage';
@@ -62,6 +63,8 @@ const App: React.FC = () => {
               <Route path="users" element={<AdminUsers />} />
               <Route path="import" element={<ProductImport />} />
               <Route path="cj-import" element={<CJImport />} />
+              {/* Add the Printful Integration route */}
+              <Route path="printful" element={<PrintfulIntegration />} />
             </Route>
             
             {/* Catch all redirect to login */}

@@ -11,8 +11,9 @@ import {
   BookOpen, 
   Users,
   ShoppingBag, 
-  Upload 
-} from 'lucide-react';
+  Upload, 
+  Globe 
+} from 'lucide-react'; // Added Globe as a potential icon for Printful
 import { Dog as DogLogo } from 'lucide-react';
 
 const navigationItems = [
@@ -25,7 +26,9 @@ const navigationItems = [
   { path: '/admin/blogs', icon: BookOpen, label: 'Blogs' },
   { path: '/admin/users', icon: Users, label: 'Users' },
   { path: '/admin/import', icon: ShoppingBag, label: 'Amazon Import' },
-  { path: '/admin/cj-import', icon: Upload, label: 'CJ Import' }
+  { path: '/admin/cj-import', icon: Upload, label: 'CJ Import' },
+  // New navigation item for Printful
+  { path: '/admin/printful', icon: Globe, label: 'Printful Integration' }
 ];
 
 interface AdminMobileMenuProps {
